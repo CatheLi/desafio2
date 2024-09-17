@@ -1,0 +1,103 @@
+/*Color de fondo de body en gris claro, y fuentes Sans-serif predeterminada*/
+body {
+    background-color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    position: relative;
+    /*posicion del header como relativa para poner elementos de manera absoluta*/
+    height: 300px;
+    /*altura del header 300 pixeles*/
+    background-image: url(../imgs/0-header.jpg);
+    background-size: cover;
+    /*imagen que cubra todo el contenedor sin distorcionarse*/
+    background-position: center;
+    color: white;
+    /*color del texto del header*/
+    text-align: left;
+    /*alineo el texto del header a la izquierda*/
+}
+
+.header h1,
+.header p {
+    position: absolute;
+    /*posición de h1 y p en el header de manera absoluta*/
+    left: 20px;
+    /*h1 y p quedan posicionados en la izquierda a 20 pixeles*/
+}
+
+.header h1 {
+    font-size: 50px;
+    bottom: 60px;
+    /*h1 queda posicionado a 60 px desde la parte inferior del header*/
+    margin: 0;
+    /*elimino el margen de h1*/
+}
+
+.header p {
+    font-size: 18px;
+    bottom: 20px;
+    /*p queda posicionado a 20 px desde la parte inferior del header*/
+}
+
+.products {
+    width: 85%;
+    /*el ancho del contenedor de productos queda al 85% del contenedor padre*/
+    margin: auto;
+    /*dejo centrado el contenedor de productos horizontalmente*/
+}
+
+.imagen {
+    width: 200px;
+    /*establezco el ancho de las imagenes*/
+    height: auto;
+    /*dejo automatico para que mantenga la proporción de la imagen*/
+    max-width: 100%;
+    /*establezco que el ancho maximo de las imagenes sea del 100% del contenedor padre*/
+    max-height: 100%;
+    /*establezco que el alto maximo de las imagenes sea del 100% del contenedor padre*/
+}
+
+.products td {
+    width: 50%;
+    /*como son dos columnas, establezco que cada columna represente el 50% del contenedor padre*/
+    padding: 20px;
+    /*agrego espacio interno a las celdas de la tabla*/
+    vertical-align: top;
+    /*alineo el contenido de las celdas hacia arriba*/
+    text-align: justify;
+}
+
+.products img {
+    width: 100%;
+    /*establezco que el ancho de las imagenes sea el 100% del contenedor padre*/
+}
+
+.products h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.footer {
+    background-image: linear-gradient(to left, navy, #ececf0);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: navy;
+    text-decoration: wavy;
+}
